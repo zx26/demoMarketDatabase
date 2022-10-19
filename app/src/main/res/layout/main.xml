@@ -1,11 +1,44 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center">
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
 
-    <TextView
-        android:text="@string/hello_world"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Agregar"
+			android:id="@+id/agregar"
+			android:onClick="agregar"
+			android:padding="4dp"/>
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Usuario"
+			android:id="@+id/usuario"
+			android:padding="4dp"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+
+		<ListView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:dividerHeight="3dp"
+			android:divider="#0700D1"
+			android:id="@+id/lista"/>
+
+	</LinearLayout>
 
 </LinearLayout>
+
