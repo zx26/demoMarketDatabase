@@ -3,6 +3,8 @@ import android.app.*;
 import android.os.*;
 import android.widget.*;
 import android.preference.*;
+import android.view.*;
+import android.content.*;
 
 public class Datos extends Activity
 {
@@ -10,6 +12,7 @@ public class Datos extends Activity
 	private EditText cantidadTexto;
 	private EditText motivoTexto;
 	private EditText direccionTexto;
+	Prestamo prestamo;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState)
@@ -24,7 +27,15 @@ public class Datos extends Activity
 		cantidadTexto=findViewById(R.id.cantidadTexto);
 		motivoTexto=findViewById(R.id.motivoTexto);
 		direccionTexto=findViewById(R.id.direccionTexto);
+		prestamo = new Prestamo();
+	}
+	
+	public void agregarDatos(View view){
+		prestamo.nombre=nombreTexto.getText().toString();
+		prestamo.save();
 		
+		Intent intento= new Intent(getBaseContext(),MainActivity.class);
+		startActivity(intento);
 	}
 	
 	

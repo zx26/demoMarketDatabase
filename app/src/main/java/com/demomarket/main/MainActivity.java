@@ -20,7 +20,7 @@ public class MainActivity extends Activity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-		prestamo = new Prestamo("Roberto","Nuevo negocio","270","Urdaneta");
+		
 		
 		List<Prestamo> prest=Prestamo.listAll(Prestamo.class);
 		lista=findViewById(R.id.lista);
