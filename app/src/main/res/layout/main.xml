@@ -20,7 +20,8 @@
 		<Button
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:text="Usuario"
+			android:text="Borrar"
+			android:onClick="borrar"
 			android:id="@+id/usuario"
 			android:padding="4dp"/>
 

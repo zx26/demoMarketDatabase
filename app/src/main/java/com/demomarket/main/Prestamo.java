@@ -1,7 +1,7 @@
 package com.demomarket.main;
 import com.orm.*;
 
-public class Prestamo extends SugarRecord<Prestamo>
+public class Prestamo extends SugarRecord
 {
 	String nombre;
 	

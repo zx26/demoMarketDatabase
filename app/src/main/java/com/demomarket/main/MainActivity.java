@@ -25,8 +25,12 @@ public class MainActivity extends Activity
 		
 		
 		List<Prestamo> prest=Prestamo.listAll(Prestamo.class);
+		ArrayList<String> prestArray=new ArrayList<String>();
+		for(Prestamo prestamo:prest){
+			prestArray.add(prestamo.toString());
+		}
 		lista=findViewById(R.id.lista);
-		lista.setAdapter(new ArrayAdapter<Prestamo>(this,android.R.layout.simple_list_item_1,prest));
+		lista.setAdapter(new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,prestArray));
 		lista.setOnItemClickListener(new OnItemClickListener(){
 			
 			public void onItemClick(AdapterView<?> p1, View view, int pos, long log){
@@ -49,7 +53,11 @@ public class MainActivity extends Activity
 		startActivity(intento);
 	}
 	
-	public void verDatos(View view){
-		
+	public void borrar(View view){
+		Prestamo.deleteAll(Prestamo.class);
+		Intent intent = new Intent(getBaseContext(),MainActivity.class);
+		startActivity(intent);
 	}
+	
+	
 }
