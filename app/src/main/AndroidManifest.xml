@@ -15,6 +15,7 @@
 		<meta-data android:name="QUERY_LOG" android:value="true" />
 		<meta-data android:name="DOMAIN_PACKAGE_NAME" android:value="com.demomarket.main" />
 		<activity android:name=".Datos"/>
+		<activity android:name=".PrestamosDatos"/>
 		
         <activity
             android:name=".MainActivity"

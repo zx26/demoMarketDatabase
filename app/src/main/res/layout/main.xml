@@ -35,6 +35,7 @@
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:dividerHeight="3dp"
+			android:descendantFocusability="blocksDescendants"
 			android:divider="#0700D1"
 			android:id="@+id/lista"/>
 

@@ -37,6 +37,9 @@
 			android:name=".Datos"/>
 
 		<activity
+			android:name=".PrestamosDatos"/>
+
+		<activity
 			android:name=".MainActivity"
 			android:label="@string/app_name">
 
