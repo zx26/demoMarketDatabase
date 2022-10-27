@@ -32,6 +32,9 @@ public class Datos extends Activity
 	
 	public void agregarDatos(View view){
 		prestamo.nombre=nombreTexto.getText().toString();
+		prestamo.cantidad=cantidadTexto.getText().toString();
+		prestamo.prestamoMotivo=motivoTexto.getText().toString();
+		prestamo.dirección=direccionTexto.getText().toString();
 		prestamo.save();
 		
 		Intent intento= new Intent(getBaseContext(),MainActivity.class);

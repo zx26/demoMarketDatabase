@@ -27,7 +27,7 @@ public class MainActivity extends Activity
 		List<Prestamo> prest=Prestamo.listAll(Prestamo.class);
 		ArrayList<String> prestArray=new ArrayList<String>();
 		for(Prestamo prestamo:prest){
-			prestArray.add(prestamo.toString());
+			prestArray.add(prestamo.nombre);
 		}
 		lista=findViewById(R.id.lista);
 		lista.setAdapter(new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,prestArray));
@@ -36,11 +36,12 @@ public class MainActivity extends Activity
 			public void onItemClick(AdapterView<?> p1, View view, int pos, long log){
 				
 				  
-				  long posicion= pos+1;
-				  
-				  Intent intentoDatos= new Intent(getBaseContext(),PrestamosDatos.class);
-				  intentoDatos.putExtra("posicion",posicion);
-				  startActivityForResult(intentoDatos,pos);
+					  
+				        long posicion= pos;
+				        Intent intentoDatos= new Intent(getBaseContext(),PrestamosDatos.class);
+				        intentoDatos.putExtra("posicion",posicion);
+				        startActivity(intentoDatos);
+						
 				  
 			}
 		});

@@ -20,12 +20,17 @@ public final class R {
         public static final int lista=0x7f060006;
         public static final int motivoTexto=0x7f060002;
         public static final int nombreTexto=0x7f060000;
+        public static final int texto1=0x7f060007;
+        public static final int texto2=0x7f060008;
+        public static final int texto3=0x7f060009;
+        public static final int texto4=0x7f06000a;
         public static final int usuario=0x7f060005;
     }
     public static final class layout {
         public static final int datos=0x7f030000;
         public static final int lista=0x7f030001;
         public static final int main=0x7f030002;
+        public static final int prestamos_datos=0x7f030003;
     }
     public static final class string {
         public static final int app_name=0x7f040000;
